@@ -44,6 +44,7 @@ public func insertionSort<T>(_ elements: [T]) -> [T] where T: Comparable {
             j = p
             if array[p] > value {
                 array[p+1] = array[p]
+                j -= 1
             } else {
                 break
             }
